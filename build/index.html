@@ -39,6 +39,7 @@
   <title>TECE - Close to you | TECE Russia</title>
   <link rel="stylesheet" href="css/fonts.css" media="all"/>
   <link rel="stylesheet" href="css/style.css" media="all"/>
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" media="all"/>
   <meta name="robots" content="noindex,nofollow">
 
   <script>var language = 'ru', mode = 5, disableStr = '', piEnableString = 'pi_opt_in319041', piVisitorString = 'visitor_id319041', disableFeedbackText = "Stand: Opt-Out-Cookie ist gesetzt";</script>  <!--Языковая панель-->
@@ -622,11 +623,39 @@
       </div>
     </div>
   </footer>
+
 <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"ru\/","currentPath":"node\/1","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"ru"},"pluralDelimiter":"\u0003","user":{"uid":0,"permissionsHash":"baee54751bfb279bc411279df1e2c4bd82c6e8432f72ff1cd4deb6fb10b0e6ef"}}</script>
 <script src="js/user2.js"></script>
 <script src="js/user3.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIQSF7ULUgczkQqKkHOBgq5qYPkJuEnng&amp;callback=initMap" defer async data-test="map-link"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 
 <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"cb57eb95ed","applicationID":"77492342","transactionName":"blIEMEpVW0ZWAkFQVlcYJwdMXVpbGBFUXlxmVAcHUFE=","queueTime":0,"applicationTime":22,"atts":"QhUHRgJPSEg=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+<a style="position:fixed; left: 0; bottom: 0; border: 1px solid black; display: block; z-index: 100; background-color: #fff; cursor: pointer; background-color: rgba(0, 0, 0, 0.3); font-weight: bold;" data-src="#files" data-fancybox>Файлы</a>
+
+<div id="files" style="display: none;">
+  <ul>
+    <li><a href="/contacts.html">contacts</a></li>
+    <li><a href="/deiatelnost.html">deiatelnost</a></li>
+    <li><a href="/design.html">design</a></li>
+    <li><a href="/downloads.html">downloads</a></li>
+    <li><a href="/index.html">index</a></li>
+    <li><a href="/products.html">products</a></li>
+    <li><a href="/produkcia.html">produkcia</a></li>
+    <li><a href="/tece-company.html">tece-company</a></li>
+    <li><a href="/tece-international.html">tece-international</a></li>
+    <li><a href="/tece-proekty.html">tece-proekty</a></li>
+    <li><a href="/service.html">service</a></li>
+  </ul>
+</div>
+
+<a data-fancybox data-src="#hidden-content" href="javascript:;">
+  Trigger the fancyBox
+</a>
+
+<div style="display: none;" id="hidden-content">
+  <h2>Hello</h2>
+  <p>You are awesome.</p>
+</div>
 </body>
 </html>
