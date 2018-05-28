@@ -24,23 +24,18 @@ $(document).ready(function() {
 
 	//Тогглер-гамбургер в меню в шапке
 	var menu_toggler = $('.main-nav__toggler');
-	var mob_menu = $('.page-header__mob-wrap');
+	var mob_menu_wrap = $('.page-header__mob-wrap');
+	var pape_header_nav = $('.page-header__nav');
 	menu_toggler.click(function() {
 		$(this).toggleClass('active');
-		mob_menu.slideToggle();
+		mob_menu_wrap.slideToggle();
 	});
 	//При клике вне тогглера и меню
 	$(document).click(function(event) {
-		if(menu_toggler.hasClass('active') && !mob_menu.is(event.target) 
-				&& !menu_toggler.is(event.target) 
-				&& mob_menu.has(event.target).length === 0 
-				&& !$('.row--page-header').is(event.target)
-			) {
+		if(menu_toggler.hasClass('active') && !pape_header_nav.is(event.target) && pape_header_nav.has(event.target).length === 0 
+			&& !menu_toggler.is(event.target) && menu_toggler.has(event.target).length === 0) {
 			menu_toggler.removeClass('active');
-			mob_menu.slideUp();
-			//Закрытие вложенных пунктов меню
-			// $('.page-header__menu-item').children('ul').removeClass('opened').slideUp(400, "linear");
-			// $('.page-header__menu-item').children('.child-toggler').removeClass('child-toggler--rotate');
+			mob_menu_wrap.slideUp();
 		}
 	});
 
@@ -69,7 +64,18 @@ $(document).ready(function() {
 
  	    $('.our-works__tabs').on('click', '.our-works__tab:not(.active)', function () {
         $(this).addClass('active').siblings().removeClass('active');
-        $('.our-works__slides').slick('slickGoTo', $(this).index());
-            // .closest('.slick-track').find('.slick-slide').removeClass('active').eq($(this).index()).addClass('active');
-	    });
+        // $('.our-works__slider.active').find('.our-works__slides').slick('unslick');
+        $('.our-works__sliders').find('.our-works__slider').removeClass('active').eq($(this).index()).addClass('active');
+
+			 $('.our-works__slides').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				prevArrow: "",
+				nextArrow: "",
+				dots: false,
+				autoplay: true,
+				autoplaySpeed: 3000,
+				fade: true,
+			 });
+    });
 });
