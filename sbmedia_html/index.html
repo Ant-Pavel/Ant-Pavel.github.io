@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex,nofollow">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
@@ -23,10 +24,10 @@
 					<div class="row  align-items-center">
 						<nav class="page-header__nav main-nav col-lg-9 ml-auto">
 							<ul class="main-nav__list">
-								<li class="main-nav__item"><a class="main-nav__link" href="">Наши кейсы</a></li>
-								<li class="main-nav__item"><a class="main-nav__link" href="">Наши услуги</a></li>
-								<li class="main-nav__item"><a class="main-nav__link" href="">Наши принципы</a></li>
-								<li class="main-nav__item"><a class="main-nav__link" href="">Контакты</a></li>
+								<li class="main-nav__item"><a class="main-nav__link js-scroll-to" href="#our-works">Наши кейсы</a></li>
+								<li class="main-nav__item"><a class="main-nav__link js-scroll-to" href="#services">Наши услуги</a></li>
+								<li class="main-nav__item"><a class="main-nav__link js-scroll-to" href="#discuss">Наши принципы</a></li>
+								<li class="main-nav__item"><a class="main-nav__link js-scroll-to" href="#advantages">Контакты</a></li>
 							</ul>
 						</nav>
 						<div class="page-header__social col-lg-2 col-sm-3 ml-lg-auto m-auto">
@@ -99,7 +100,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="our-works container">
+	<div class="our-works container" id="our-works">
 		<div class="our-works__top row">
 			<div class="our-works__title col-lg-3">Наши работы</div>
 			<div class="our-works__tabs col-lg-9">
@@ -342,7 +343,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="services">
+	<div class="services" id="services">
 		<div class="container container--services">
 			<div class="services__title">Наши услуги</div>
 			<div class="row row--services">
@@ -373,7 +374,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="discuss">
+	<div class="discuss" id="discuss">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="discuss__title">Давайте обсудим ваш проект</div>
@@ -386,7 +387,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="advantages">
+	<div class="advantages" id="advantages">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="advantages__title col-lg-5">Про нас не стыдно рассказать друзьям</div>

@@ -78,4 +78,18 @@ $(document).ready(function() {
 				fade: true,
 			 });
     });
+
+	$('.js-scroll-to').on('click', function (e) {
+	var id = $(this).attr('href'),
+	    top = $(id).length && id !== '#' ? $(id).offset().top : 0;
+		menu_toggler.removeClass('active');
+		mob_menu_wrap.slideUp();
+	e.preventDefault();
+
+	if ($(window).width() < 768) {
+	  $('body,html').animate({ scrollTop: top - 70 + 'px' }, 100);
+	} else {
+	  $('body,html').animate({ scrollTop: top - 95 + 'px' }, 700);
+	}
+	});
 });

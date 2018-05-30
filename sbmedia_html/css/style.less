@@ -177,6 +177,24 @@ body {
 		text-decoration: none;
 	}
 
+	&__soc-link svg path {
+		transition: all 0.2s ease-in-out;
+	}
+
+	&__soc-link:hover svg path{
+		fill: #f15d2a;
+	}
+
+	&__soc-link:active svg path{
+		fill: rgb(188, 74, 35);
+	}
+
+	@media(min-width: 992px) {
+		&__mob-wrap {
+			display: block !important;
+		}
+	}
+
 	@media(max-width: 991px) {
 		&__mob-wrap {
 			display: none;
@@ -468,7 +486,13 @@ body {
 	}
 
 	&__slider {
+		height: 0;
+		overflow: hidden;
 		position: relative;
+	}
+
+	&__slider.active {
+		height: auto;
 
 		@media(max-width: 991px) {
 			padding-bottom: 50px;
@@ -1069,6 +1093,18 @@ body {
 		display: block;
 		margin-left: 17px;
 		text-decoration: none;
+	}
+
+	&__soc-link svg path {
+		transition: all 0.2s ease-in-out;
+	}
+
+	&__soc-link:hover svg path {
+		fill: #f15d2a;
+	}
+
+	&__soc-link:active svg path{
+		fill: rgb(188, 74, 35);
 	}
 
 	@media(max-width: 991px) {
