@@ -87,7 +87,7 @@ $(document).ready(function() {
 	e.preventDefault();
 
 	if ($(window).width() < 768) {
-	  $('body,html').animate({ scrollTop: top - 70 + 'px' }, 100);
+	  $('body,html').animate({ scrollTop: top - 95 + 'px' }, 700);
 	} else {
 	  $('body,html').animate({ scrollTop: top - 95 + 'px' }, 700);
 	}
