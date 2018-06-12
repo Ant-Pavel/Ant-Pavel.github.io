@@ -1,0 +1,270 @@
+@import "normalize.min.less";
+@import "parts/scaffoldings.less";
+@import "grid.less";
+@import "jquery.fancybox.min.less";
+@import "slick.less";
+
+.page-header {
+
+	&__main-nav {
+		background-image: linear-gradient( -90deg, rgb(108,99,127) 0%, rgb(110,204,202) 100%);
+	}
+
+	&__info {
+		.bg();
+		padding-top: 20px;
+		background-image: url('../images/bg-header.jpg');
+		background-size: cover;
+	}
+
+
+	&__logo {
+		float: left;
+		text-decoration: none;
+		overflow: hidden;
+		width: 455px;
+		height: 70px;
+	}
+
+	&__logo img {
+
+	}
+
+	&__contacts {
+		padding-top: 40px;
+		padding-bottom: 5px;
+	}
+
+	&__phone {
+		display: block;
+		text-decoration: none;
+		white-space: nowrap;
+		color: #000;
+		font-size: 40px;
+		line-height: 50px;
+		text-align: right;
+	}
+
+	&__mail {
+		display: block;
+		text-decoration: none;
+		white-space: nowrap;
+		color: #000;
+		font-size: 40px;
+		line-height: 50px;
+		text-align: right;
+	}
+
+	&__address {
+		font-size: 30px;
+		line-height: 36px;
+		color: #000;
+		text-decoration: none;
+		text-align: right;
+	}
+
+	&__cat-nav {
+		background-color: #ff9f42;
+	}
+}
+
+.main-nav {
+	&__list {
+		.ul();
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	&__item a {
+		display: block;
+		padding: 9px 15px;
+		color: #fff;
+		text-decoration: none;
+		font-size: 26px;
+		line-height: 30px;
+		transition: 0.2s;
+	}
+
+	&__item a:hover {
+		background-color: #b3b3b3;
+	}
+}
+
+.cat-nav {
+
+	&__list {
+		.ul();
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&__item {
+		width: 20%;
+	}
+
+	&__item a {
+		padding: 3px 0;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		font-size: 25px;
+		line-height: 30px;
+		color: #363636;
+		transition: 0.2s;
+	}
+
+	&__item a:hover {
+		background-color: #e48324;
+	}
+}
+
+.prod-types > div {
+	margin-bottom: 30px;
+}
+
+.prod-type {
+	display: flex;
+	flex-direction: column;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid #000;
+
+	&__info {
+		margin-bottom: 10px;
+	}
+
+	&__img-wrap {
+		float: left;
+		width: 45%;
+		margin-right: 20px;
+		margin-bottom: 10px;
+		overflow: hidden;
+	}
+
+	&__img-wrap img {
+		height: 250px;
+		object-fit: contain;
+	}
+
+
+	&__title {
+		margin-bottom: 15px;
+		font-size: 22px;
+		line-height: 26px;
+		display: block;
+		text-decoration: none;
+		color: #000;
+		font-weight: 600;
+	}
+
+	&__title:hover {
+		text-decoration: underline;
+	}
+
+	&__descr {
+		text-align: justify;
+	}
+
+	&__rel-list {
+		margin-top: auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__rel-item {
+		width: 50%;
+		padding: 0 10px;
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: #000;
+	}
+
+	&__rel-item:hover {
+		text-decoration: underline;
+	}
+
+	&__rel-img-wrap {
+		display: flex;
+		margin-right: 10px;
+		width: 80px;
+		height: 80px;
+	}
+
+	&__rel-img-wrap img {
+		display: block;
+		margin: auto;
+	}
+
+	&__rel-name {
+		font-size: 15px;
+		line-height: 20px;
+	}
+}
+
+.features {
+
+	&__item {
+		margin-bottom: 20px;
+	}
+
+	&__icon {
+		background-repeat: no-repeat;
+		background-position: center left;
+		height: 100px;
+		margin-bottom: 20px;
+	}
+
+	&__icon--proekt {
+		background-image: url('../images/pencil-icon.png');
+	}
+
+	&__icon--manufactor {
+		background-image: url('../images/gear-icon.png');
+	}
+
+	&__icon--sert {
+		background-image: url('../images/sert-icon-1.png'), url('../images/sert-icon-2.png'), url('../images/sert-icon-3.png');
+		background-position: left center, 120px center, 240px center;
+	}
+
+	&__name {
+		margin-bottom: 26px;
+		font-size: 22px;
+		line-height: 26px;
+		font-weight: 600;
+	}
+
+	&__descr {
+		
+	}
+}
+
+.page-footer {
+	padding-top: 15px;
+	padding-bottom: 30px;
+	background-color: #d1d1d1;
+	font-family: "Century Gothic";
+	text-align: center;
+
+	&__name {
+		margin: 0;
+		margin-bottom: 15px;
+		font-size: 20px;
+		line-height: 26px;
+		font-weight: 400;
+		margin-bottom: 20px;
+	}
+
+	&__address {
+		margin: 0;
+		font-size: 20px;
+		line-height: 26px;
+		font-weight: 400;
+	}
+}
