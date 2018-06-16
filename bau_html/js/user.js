@@ -5,8 +5,5 @@ $(document).ready(function() {
     // // ********************
     $('#cascade-slider').cascadeSlider({});
 
-    // // ********************
-    // MatchHeight
-    // // ********************
-    // $('.why__name').matchHeight();
+
  });

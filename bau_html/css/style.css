@@ -2277,7 +2277,6 @@ body.compensate-for-scrollbar {
   margin-left: -11px;
   height: 180px;
   width: 22px;
-  background-image: url('../images/scroll-icon.png');
 }
 @media (max-width: 991px) {
   .hero__scroll-icon {
@@ -2288,6 +2287,123 @@ body.compensate-for-scrollbar {
   .hero__scroll-icon {
     height: 95px;
   }
+}
+@-webkit-keyframes toggleOpacity {
+  0%,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes toggleOpacity {
+  0%,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.animate-icon {
+  overflow: hidden;
+}
+.animate-icon span {
+  position: absolute;
+  -webkit-animation-name: toggleOpacity;
+          animation-name: toggleOpacity;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+.animate-icon i {
+  position: absolute;
+  -webkit-animation-name: toggleOpacity;
+          animation-name: toggleOpacity;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+.animate-icon span {
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 10px;
+  background-color: #d6971c;
+}
+.animate-icon span:nth-of-type(1) {
+  margin-top: 30px;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.animate-icon span:nth-of-type(2) {
+  margin-top: 45px;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.animate-icon span:nth-of-type(3) {
+  margin-top: 60px;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.animate-icon span:nth-of-type(4) {
+  margin-top: 75px;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.animate-icon span:nth-of-type(5) {
+  margin-top: 90px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.animate-icon span:nth-of-type(6) {
+  margin-top: 105px;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.animate-icon span:nth-of-type(7) {
+  margin-top: 120px;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+.animate-icon span:nth-of-type(8) {
+  margin-top: 135px;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+.animate-icon span:nth-of-type(9) {
+  margin-top: 150px;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+.animate-icon span:nth-of-type(10) {
+  margin-top: 165px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.animate-icon .head {
+  position: absolute;
+  top: 0;
+  width: 22px;
+  height: 30px;
+  border: 2px solid #eda41a;
+  border-radius: 20px;
+}
+.animate-icon .head:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  margin-top: -4px;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 4px;
+  background-color: #d6971c;
 }
 .promo {
   margin-bottom: 160px;
