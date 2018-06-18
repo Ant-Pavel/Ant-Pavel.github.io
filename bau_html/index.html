@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/cascade-slider.js"></script>
 	<script src="js/user.js"></script>
 	<meta charset="UTF-8">
@@ -33,7 +34,7 @@
 				</div>
 			</div>
 			<div class="hero__btn-wrap">
-				<a href="#" class="btn">Оставить заявку</a>
+				<a href="#popup-apply" class="btn" data-fancybox>Оставить заявку</a>
 			</div>
 		</div>
 		<div class="hero__scroll-icon animate-icon">
@@ -101,7 +102,7 @@
 					</li>
 				</ul>
 			<div class="steps__btn-wrap">
-				<a href="#" class="btn">Оставить заявку</a>
+				<a href="#popup-apply" class="btn" data-fancybox>Оставить заявку</a>
 			</div>
 		</div>
 	</div>
@@ -126,7 +127,7 @@
 						<p>Мы подберем для тебя актуальную вакансию и пригласим на собеседование.</p>
 					</div>
 					<div class="apply__btn-wrap">
-						<a href="#" class="btn">Оставить заявку</a>
+						<a href="#popup-apply" data-fancybox class="btn">Оставить заявку</a>
 					</div>
 				</div>
 			</div>
@@ -136,6 +137,45 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div id="popup-apply" style="display: none;">
+		<form class="form">
+
+			<div class="form__title">Оставляй заявку и наш менеджер свяжется с тобой в ближайшее время</div>
+
+			<label class="field-select col-xl-8 col-lg-10">
+				<span class="field-select__label">Город</span>
+					<span class="field-select__input-wrap">
+					<select name="" id="" class="field-select__input">
+						<option value="1">Калининград</option>
+						<option value="1">Омск</option>
+						<option value="1">Москва</option>
+						<option value="1">Новосибирск</option>
+					</select>
+					<span class="field-select__fake-option">
+						<span class="fake-text">Калининград</span>
+						<span class="field-select__caret"></span>
+					</span>
+					</span>
+			</label>
+
+			<label class="field-text col-xl-8 col-lg-10">
+				<input type="text" class="field-text__input" placeholder="Ваше имя">
+			</label>
+
+			<label class="field-text col-xl-8 col-lg-10">
+				<input type="text" class="field-text__input" placeholder="Номер телефона">
+			</label>
+
+			<div class="form__btn-wrap">
+				<a href="#popup-thanks" data-fancybox class="btn btn--form">Отправить</a>
+			</div>
+			<div class="form__politica col-xl-5 col-lg-6">Нажимая «отправить», вы соглашаетесь с нашими <a href="#">условиями конфидениальности</a>.</div>
+		</form>
+	</div>
+
+	<div id="popup-thanks" style="display: none;">
+		<div class="thanks__text">Спасибо. Мы рассмотрим твою кандидатуру уже сегодня!</div>
 	</div>
 </body>
 </html>
