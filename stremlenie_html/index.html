@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/jquery.matchHeight-min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/user.js"></script>
+	<meta charset="UTF-8">
+	<title>Stremlenie</title>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header class="page-header" id="header">
+		<div class="container">
+			<div class="page-header__top row">
+				<div class="main-nav__toggler-wrap container">
+					<div class="main-nav__toggler">
+						<span></span>
+					</div>
+				</div>
+				<div class="page-header__logo-wrap col-lg-3 col-md-6">
+					<a href="#" class="page-header__logo">
+						<img src="images/logo.jpg" alt="">
+					</a>
+				</div>
+				<div class="page-header__btn-wrap col-lg-3 col-md-7">
+					<span class="page-header__btn-descr">Первое занятие бесплатно</span>
+					<a href="#thanks" class="btn btn--page-header" data-fancywhite><span>Записаться</span></a>
+				</div>
+				<div class="page-header__soc col-xl-2 col-lg-3 col-md-4">
+					<span class="page-header__soc-text">Мы в социальных сетях</span>
+					<div class="page-header__soc-list">
+						<a href="#" class="page-header__soc-link">
+							<i class="fab fa-vk"></i>
+						</a>
+						<a href="#" class="page-header__soc-link">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="#" class="page-header__soc-link">
+							<i class="fab fa-youtube"></i>
+						</a>
+						<a href="#" class="page-header__soc-link">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="#" class="page-header__soc-link">
+							<i class="fab fa-odnoklassniki"></i>
+						</a>
+					</div>
+				</div>
+				<div class="page-header__contacts col-lg-3 col-md-5">
+					<a href="tel:+7 4012-12-13-14" class="page-header__tel">+7 4012-12-13-14</a>
+					<span class="page-header__addr">Санкт-Петербург, м. Площадь Восстания, ул. Восстания 8</span>
+				</div>
+			</div>
+		</div>
+		<div class="main-nav__wrapper">
+			<nav class="page-header__nav main-nav container">
+				<ul class="main-nav__list">
+					<li class="main-nav__item"><a href="#">Программы обучения</a></li>
+					<li class="main-nav__item"><a href="#">Расписание</a></li>
+					<li class="main-nav__item main-nav__item--has-child">
+					<a href="#">О школе</a>
+						<ul class="main-nav__list-2lev">
+							<li class="main-nav__item-2lev"><a href="#">О нас</a></li>
+							<li class="main-nav__item-2lev"><a href="#">Новости</a></li>
+							<li class="main-nav__item-2lev"><a href="#">Акции</a></li>
+						</ul>
+					</li>
+					<li class="main-nav__item main-nav__item--has-child">
+						<a href="#">Вопрос-ответ</a>
+						<ul class="main-nav__list-2lev">
+							<li class="main-nav__item-2lev"><a href="#">О нас</a></li>
+							<li class="main-nav__item-2lev"><a href="#">Новости</a></li>
+							<li class="main-nav__item-2lev"><a href="#">Акции</a></li>
+						</ul>
+					</li>
+					<li class="main-nav__item"><a href="#">Галерея</a></li>
+					<li class="main-nav__item"><a href="#">Арендодателям</a></li>
+					<li class="main-nav__item"><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="hero">
+		<div id="slider-hero" class="hero__slider">
+			<div class="hero__slide" style="background-image: url(images/front/hero-bg.jpg);">
+				<div class="container">
+					<div class="row" style="flex-direction: column;">
+						<div class="hero__info col-xl-6 col-lg-7 col-md-6">
+							<div class="hero__title">Открыт набор в группы на новый сезон 2018-2019!</div>
+							<div class="hero__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam numquam deserunt praesentium necessitatibus.</div>
+							<div class="hero__btn-wrap">
+								<a href="#" class="btn btn--hero"><span>Выбрать группу</span></a>
+							</div>
+						</div>
+ 					</div>
+				</div>
+				<div class="hero__img-wrap">
+					<img class="hero__img" src="images/front/hero-photo.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="hero__slide" style="background-image: url(images/front/hero-bg.jpg);">
+				<div class="container">
+					<div class="row">
+						<div class="hero__info col-xl-6 col-lg-7 col-md-6">
+							<div class="hero__title">Акция!</div>
+							<div class="hero__descr">Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории. Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории. Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории.</div>
+							<div class="hero__btn-wrap">
+								<a href="#" class="btn btn--hero"><span>Подробнее</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hero__img-wrap">
+					<img class="hero__img" src="images/front/place-img.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="hero__slide" style="background-image: url(images/front/hero-bg.jpg);">
+				<div class="container">
+					<div class="row">
+						<div class="hero__info col-xl-6 col-lg-7 col-md-6">
+							<div class="hero__title">Открыт набор в группы на новый сезон 2018-2019!</div>
+							<div class="hero__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam numquam deserunt praesentium necessitatibus.</div>
+							<div class="hero__btn-wrap">
+								<a href="#" class="btn btn--hero"><span>Выбрать группу</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hero__img-wrap">
+					<img class="hero__img" src="images/front/map-img.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="hero__dots"></div>
+	</div>
+
+	<div class="reasons">
+		<div class="container">
+			<div class="block-title">Мы предлагаем:</div>
+			<ul class="reasons__list row">
+				<li class="reasons__item col-lg-3 col-md-6 col-sm-6">
+					<span class="reasons__icon" style="background-image: url(images/front/reasons/reason-cirlce-1.png);"></span>
+					<span class="reasons__name">Уникальная методика тренировок для начальной подготовки и выше</span>
+					<div class="reasons__descr">Разработана студентами и преподавателями кафедры гимнастики НГУ им. П. Ф. Лесгафта в соответствии со Всероссийской программой по художественной и эстетической гимнастике</div>
+				</li>
+				<li class="reasons__item col-lg-3 col-md-6 col-sm-6">
+					<span class="reasons__icon" style="background-image: url(images/front/reasons/reason-cirlce-2.png);"></span>
+					<span class="reasons__name">Подготовка к поступлению в государственную спортивную школу</span>
+					<div class="reasons__descr">По нашей методике уже к 6 годам Ваш ребёнок будет готов физически и психологически для поступления в школу по художественной или эстетической гимнастике и любому другому виду спорта</div>
+				</li>
+				<li class="reasons__item col-lg-3 col-md-6 col-sm-6">
+					<span class="reasons__icon" style="background-image: url(images/front/reasons/reason-cirlce-3.png);"></span>
+					<span class="reasons__name">Соединение двух видов спорта</span>
+					<div class="reasons__descr">В обучении мы совмещаем специфику художественной и эстетической гимнастики</div>
+				</li>
+				<li class="reasons__item col-lg-3 col-md-6 col-sm-6">
+					<span class="reasons__icon" style="background-image: url(images/front/reasons/reason-cirlce-4.png);"></span>
+					<span class="reasons__name">Возможность после завершения начального этапа продолжить обучение в нашей школе</span>
+					<div class="reasons__descr">В обучении мы совмещаем специфику художественной и эстетической гимнастики</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="team">
+		<div class="container">
+			<div class="block-title block-title--team block-title--slider">Наша команда</div>
+			
+			<div class="team__list" id="slider-team">
+
+				<div class="team__item container">
+					<div class="row">
+						<div class="team__img-wrap col-lg-4 col-md-4">
+							<img class="team__img" src="images/front/team-img.jpg" alt="">
+						</div>
+						<div class="team__review col-lg-6 col-md-7">
+							<div class="team__quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolorem culpa voluptatum quas nisi nobis amet qui laborum impedit, dicta illo. Earum fuga ipsum sapiente vitae quo hic dolorum iusto facere rerum commodi natus voluptates nobis assumenda modi, laudantium minima veritatis, reiciendis. Nam, praesentium. Ducimus necessitatibus, cupiditate nihil autem dolorum.</div>
+							<span class="team__name">Татьяна Авдеева</span>
+							<div class="team__position">директор школы</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="team__item container">
+					<div class="row">
+						<div class="team__img-wrap col-lg-4 col-md-4">
+							<img class="team__img" src="images/front/map-img.jpg" alt="">
+						</div>
+						<div class="team__review col-lg-6 col-md-7">
+							<div class="team__quote">Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории. Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории.</div>
+							<span class="team__name">Анастасия Иванова</span>
+							<div class="team__position">Преподаватель</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="team__item container">
+					<div class="row">
+						<div class="team__img-wrap col-lg-4 col-md-4">
+							<img class="team__img" src="images/front/hero-photo.jpg" alt="">
+						</div>
+						<div class="team__review col-lg-6 col-md-7">
+							<div class="team__quote">Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории. Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории. Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории.</div>
+							<span class="team__name">Иван Петров</span>
+							<div class="team__position">Ассистент</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="programs">
+		<div class="container">
+			<div class="block-title block-title--slider">Программы обучения</div>
+			<div class="programs__list row" id="slider-programs">
+				<div class="programs__item program">
+					<div class="program__img-wrap">
+						<img class="program__img" src="images/front/programs/girls/girl-1.png" alt="">
+					</div>
+					<div class="program__name">Группа 3-4 года</div>
+					<div class="program__descr">Занятия проводятся в игровой форме, с использованием ассоциаций. Самая важная задача перед тренером и родителями, чтобы ребёнок получал положительные эмоции от занятий и с радостью шёл на тренировку.</div>
+					<div class="program__price-wrap">
+						<span class="program__price-text">Стоимость</span>
+						<span class="program__price">3500&nbsp;руб. / 8&nbsp;занятий</span>
+					</div>
+				</div>
+
+				<div class="programs__item program">
+					<div class="program__img-wrap">
+						<img class="program__img" src="images/front/programs/girls/girl-2.png" alt="">
+					</div>
+					<div class="program__name">Группа 5-6 лет</div>
+					<div class="program__descr">На занятиях при первом годе обучения закладывается гимнастическая школа движений, повышается уровень общей и специальной физической подготовки, куда включены: базовая акробатическая подготовка, танцевальная, хореографическая и предметная подготовки.</div>
+					<div class="program__price-wrap">
+						<span class="program__price-text">Стоимость</span>
+						<span class="program__price">4500&nbsp;руб. /&nbsp;12 занятий</span>
+					</div>
+				</div>
+
+				<div class="programs__item program">
+					<div class="program__img-wrap">
+						<img class="program__img" src="images/front/programs/girls/girl-3.png" alt="">
+					</div>
+					<div class="program__name">Группа 7-8 лет</div>
+					<div class="program__descr">За год девочки обретут всю необходимую базовую гимнастическую подготовку. Смогут выбрать группу в нашей школе для дальнейшего обучения или попробовать поступить в спортивную школу по художественной или эстетической гимнастике,</div>
+					<div class="program__price-wrap">
+						<span class="program__price-text">Стоимость</span>
+						<span class="program__price">3500-4500&nbsp;руб. / 8&nbsp;занятий</span>
+					</div>
+				</div>
+
+				<div class="programs__item program">
+					<div class="program__img-wrap">
+						<img class="program__img" src="images/front/programs/girls/girl-4.png" alt="">
+					</div>
+					<div class="program__name">Группа 7-8 лет</div>
+					<div class="program__descr">За год девочки обретут всю необходимую базовую гимнастическую подготовку. Смогут выбрать группу в нашей школе для дальнейшего обучения или попробовать поступить в спортивную школу по художественной или эстетической гимнастике,</div>
+					<div class="program__price-wrap">
+						<span class="program__price-text">Стоимость</span>
+						<span class="program__price">3500-4500&nbsp;руб. / 8&nbsp;занятий</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="programs__btn-wrap">
+				<a href="#" class="btn btn--programs"><span>Записаться на бесплатное занятие</span></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="extra-programs">
+		<div class="container">
+			<div class="block-title block-title--extra-programs block-title--slider">Также мы проводм обучение по программам:</div>
+			<div class="programs__list row" id="slider-extra-programs">
+				<div class="programs__item program">
+					<div class="program__img-wrap">
+						<img class="program__img" src="images/front/programs/girls/girl-4.png" alt="">
+					</div>
+					<div class="program__name">Разовое занятие</div>
+					<div class="program__descr">Танцевальное занятие с элементами хореографии для групп начальной подготовки. Девочки активно изучают современные направления танцев, основы классической хореографии, позиции ног и рук. В конце учебного года на заключительных школьных соревнованиях девочки покажут, чему научились на данном занятии и выступят с показательным танцем.</div>
+					<div class="program__price-wrap">
+						<span class="program__price-text">Стоимость</span>
+						<span class="program__price">1700&nbsp;руб. / 4&nbsp;занятия</span>
+					</div>
+				</div>
+
+				<div class="programs__item program">
+					<div class="program__img-wrap">
+						<img class="program__img" src="images/front/programs/girls/girl-5.png" alt="">
+					</div>
+					<div class="program__name">Индивидуальные тренировки</div>
+					<div class="program__descr">Танцевальное занятие и хореография для подготовленных. Интенсивное и интересное изучение классической и современной хореографии, различных танцевальных стилей, что необходимо в художественной и эстетической гимнастике. В конце года девочки выступают с показательным выступлением.</div>
+					<div class="program__price-wrap">
+						<span class="program__price-text">Стоимость</span>
+						<span class="program__price">1000&nbsp;руб. / 1&nbsp;час</span>
+					</div>
+				</div>
+
+				<div class="programs__item program">
+					<div class="program__img-wrap">
+						<img class="program__img" src="images/front/programs/girls/girl-6.png" alt="">
+					</div>
+					<div class="program__name">Танцевальные занятия с элементами хореографии</div>
+					<div class="program__descr">Танцевальное занятие и хореография для подготовленных. Интенсивное и интересное изучение классической и современной хореографии, различных танцевальных стилей, что необходимо в художественной и эстетической гимнастике. В конце года девочки выступают с показательным выступлением.</div>
+					<div class="program__price-wrap">
+						<span class="program__price-text">Стоимость</span>
+						<span class="program__price">3500-4500&nbsp;руб. / 8&nbsp;занятий</span>
+					</div>
+				</div>
+
+				<div class="programs__item program">
+					<div class="program__img-wrap">
+						<img class="program__img" src="images/front/programs/girls/girl-7.png" alt="">
+					</div>
+					<div class="program__name">Индивидуальные тренировки</div>
+					<div class="program__descr">Танцевальное занятие и хореография для подготовленных. Интенсивное и интересное изучение классической и современной хореографии, различных танцевальных стилей, что необходимо в художественной и эстетической гимнастике. В конце года девочки выступают с показательным выступлением.</div>
+					<div class="program__price-wrap">
+						<span class="program__price-text">Стоимость</span>
+						<span class="program__price">1000&nbsp;руб. / 1&nbsp;час</span>
+					</div>
+				</div>
+
+				<div class="programs__item program">
+					<div class="program__img-wrap">
+						<img class="program__img" src="images/front/programs/girls/girl-2.png" alt="">
+					</div>
+					<div class="program__name">Танцевальные занятия с элементами хореографии</div>
+					<div class="program__descr">Танцевальное занятие и хореография для подготовленных. Интенсивное и интересное изучение классической и современной хореографии, различных танцевальных стилей, что необходимо в художественной и эстетической гимнастике. В конце года девочки выступают с показательным выступлением.</div>
+					<div class="program__price-wrap">
+						<span class="program__price-text">Стоимость</span>
+						<span class="program__price">3500-4500&nbsp;руб. / 8&nbsp;занятий</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="programs__btn-wrap">
+				<a href="#" class="btn btn--programs"><span>Записаться на бесплатное занятие</span></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="advantages">
+		<div class="container block-title block-title--advantages">Школа художественной и эстетической гимнастики Стремление - это</div>
+		<div class="advantages__list container">
+			<div class="row">
+				<div class="advantages__item col-xl-3 col-lg-4 col-md-7">Индивидуальный подход к каждому ученику</div>
+				<div class="advantages__item col-xl-3 col-lg-4 col-md-7">Мини-группы от 6 до 12 человек</div>
+			</div>
+
+			<div class="row">
+				<div class="advantages__item col-xl-3 col-lg-4 col-md-7">Гармоничное развитие личности ребёнка и его физических качеств</div>
+				<div class="advantages__item col-xl-3 col-lg-4 col-md-7">Опытный тренерский состав</div>
+			</div>
+
+			<div class="row">
+				<div class="advantages__item col-xl-3 col-lg-4 col-md-7">Разнообразные и интересные по содержанию занятия</div>
+				<div class="advantages__item col-xl-3 col-lg-4 col-md-7">Регулярные открытые занятия для родителей</div>
+			</div>
+
+			<div class="row">
+				<div class="advantages__item col-xl-3 col-lg-4 col-md-7">Достижение целей и результатов, благодаря привитию любви к занятиям</div>
+				<div class="advantages__item col-xl-3 col-lg-4 col-md-7">Возможность выбора: заниматься  профессионально или для себя</div>
+			</div>
+
+			<div class="advantages__img-wrap container">
+				<img class="advantages__img" src="images/front/advantages/advantages-big-image.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<div class="advantages-more">
+		<div class="container">
+			<div class="block-title block-title--advantages-more">А также у нас:</div>
+			<div class="advantages-more__list row">
+				<div class="advantages-more__item col-lg-3 col-md-3">
+					<span class="advantages-more__icon" style="background-image: url(images/front/advantages/advantages-cirlce-1.png)"></span>
+					<div class="advantages-more__descr">Собственный инвентарь для групп начальной подготовки</div>
+				</div>
+				<div class="advantages-more__item col-lg-3 col-md-3">
+					<span class="advantages-more__icon" style="background-image: url(images/front/advantages/advantages-cirlce-2.png)"></span>
+					<div class="advantages-more__descr">Созданы комфортные условия для занятий: высокий потолок и ковровое покрытие в каждом зале</div>
+				</div>
+				<div class="advantages-more__item col-lg-3 col-md-3">
+					<span class="advantages-more__icon" style="background-image: url(images/front/advantages/advantages-cirlce-3.png)"></span>
+					<div class="advantages-more__descr">Специально разработанный дневник достижений гимнасток для отслеживания успехов</div>
+				</div>
+				<div class="advantages-more__item col-lg-3 col-md-3">
+					<span class="advantages-more__icon" style="background-image: url(images/front/advantages/advantages-cirlce-4.png)"></span>
+					<div class="advantages-more__descr">Брендированная форма</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="reviews">
+		<div class="container">
+			<div class="block-title block-title--slider">Отзывы</div>
+			<div class="reviews__list row" id="slider-reviews">
+				<div class="reviews__item review">
+					<a href="images/front/reviews/reviews-img-1.jpg" class="review__img-wrap" data-fancybox="reviews">
+						<img src="images/front/reviews/reviews-img-1.jpg" alt="" class="review__img">
+					</a>
+					<div class="review__name">Василиса Петрова, 8 лет</div>
+					<div class="review__text">
+						<a href="#">vk.com/vasilisa_petrova</a>
+						<p>Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории.</p>
+					</div>
+				</div>
+
+				<div class="reviews__item review">
+					<a href="images/front/reviews/reviews-img-1.jpg" class="review__img-wrap" data-fancybox="reviews">
+						<img src="images/front/hero-photo.jpg" alt="" class="review__img">
+					</a>
+					<div class="review__name">Василиса Петрова, 8 лет</div>
+					<div class="review__text">
+						<a href="#">vk.com/vasilisa_petrova</a>
+						<p>Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории.</p>
+					</div>
+				</div>
+
+				<div class="reviews__item review">
+					<a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=1&amp;showinfo=0" class="review__img-wrap" data-fancybox>
+						<img src="images/front/place-img.jpg" alt="" class="review__img">
+						<span class="review__playicon"></span>
+					</a>
+					<div class="review__name">Василиса Петрова, 8 лет</div>
+					<div class="review__text">
+						Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории. Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории. Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории.
+					</div>
+				</div>
+
+				<div class="reviews__item review">
+					<a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=1&amp;showinfo=0" class="review__img-wrap" data-fancybox>
+						<img src="images/front/map-img.jpg" alt="" class="review__img">
+						<span class="review__playicon"></span>
+					</a>
+					<div class="review__name">Василиса Петрова, 8 лет</div>
+					<div class="review__text">
+						Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории. Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории. Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории.
+					</div>
+				</div>
+
+				<div class="reviews__item review">
+					<a href="images/front/reviews/reviews-img-3.jpg" class="review__img-wrap" data-fancybox="reviews">
+						<img src="images/front/reviews/reviews-img-3.jpg" alt="" class="review__img">
+					</a>
+					<div class="review__name">Василиса Петрова, 8 лет</div>
+					<div class="review__text">
+						Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории. Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории. Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории.
+					</div>
+				</div>
+			</div>
+
+		<div class="reviews__btn-wrap">
+			<a href="#" class="btn btn--reviews"><span>Оставить отзыв</span></a>
+		</div>
+
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="actions-news row">
+			<div class="news col-lg-6">
+				<div class="news__top">
+					<div class="block-title block-title--news">Акции</div>
+					<a href="#" class="news__all-link">Все акции</a>
+				</div>
+				<div class="news__list">
+					<div class="news__item news-item row">
+						<div class="news-item__img-wrap col-lg-4 col-md-3">
+							<img class="news-item__img" src="images/front/news/news-img-1.jpg" alt="">
+						</div>
+						<div class="news-item__info col-lg-8 col-md-9">
+							<div class="news-item__name">Заголовок</div>
+							<div class="news-item__descr">Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории. Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории.</div>
+							<a href="#" class="news-item__link">Подробнее</a>
+						</div>
+					</div>
+					<div class="news__item news-item row">
+						<div class="news-item__img-wrap col-lg-4 col-md-3">
+							<img class="news-item__img" src="images/front/news/news-img-2.jpg" alt="">
+						</div>
+						<div class="news-item__info col-lg-8 col-md-9">
+							<div class="news-item__name">Заголовок</div>
+							<div class="news-item__descr">Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории. Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории.</div>
+							<a href="#" class="news-item__link">Подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="news col-lg-6">
+				<div class="news__top">
+					<div class="block-title block-title--news">Новости</div>
+					<a href="#" class="news__all-link">Все новости</a>
+				</div>
+				<div class="news__list">
+					<div class="news__item news-item row">
+						<div class="news-item__img-wrap col-lg-4 col-md-3">
+							<img class="news-item__img" src="images/front/news/news-img-1.jpg" alt="">
+						</div>
+						<div class="news-item__info col-lg-8 col-md-9">
+							<div class="news-item__name">Заголовок</div>
+							<div class="news-item__descr">Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории. Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории.</div>
+							<a href="#" class="news-item__link">Подробнее</a>
+						</div>
+					</div>
+					<div class="news__item news-item row">
+						<div class="news-item__img-wrap col-lg-4 col-md-3">
+							<img class="news-item__img" src="images/front/news/news-img-2.jpg" alt="">
+						</div>
+						<div class="news-item__info col-lg-8 col-md-9">
+							<div class="news-item__name">Заголовок</div>
+							<div class="news-item__descr">Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории. Стимулирование сбыта, в рамках сегодняшних воззрений, охватывает рыночный охват аудитории.</div>
+							<a href="#" class="news-item__link">Подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="faq">
+		<div class="container">
+			<div class="block-title">Часто задаваемые вопросы</div>
+			<div class="faq__list">
+				<div class="faq__item">
+					<div class="faq__question">Где проходят занятия?</div>
+					<div class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eos nesciunt accusamus illum sapiente impedit animi cumque debitis blanditiis perspiciatis a fugiat ipsam necessitatibus deleniti neque voluptates dolor sed quibusdam, veritatis temporibus odio cum eligendi. Illum beatae quidem eos rerum.
+					<span class="tick"></span>
+					</div>
+				</div>
+				<div class="faq__item">
+					<div class="faq__question">Что с собой взять на первое занятие?</div>
+					<div class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eos nesciunt accusamus illum sapiente impedit animi cumque debitis blanditiis perspiciatis a fugiat ipsam necessitatibus deleniti neque voluptates dolor sed quibusdam, veritatis temporibus odio cum eligendi. Illum beatae quidem eos rerum.</div>
+				</div>
+				<div class="faq__item">
+					<div class="faq__question">Можно ли присутствовать родителям на уроках</div>
+					<div class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eos nesciunt accusamus illum sapiente impedit animi cumque debitis blanditiis perspiciatis a fugiat ipsam necessitatibus deleniti neque voluptates dolor sed quibusdam, veritatis temporibus odio cum eligendi. Illum beatae quidem eos rerum.</div>
+				</div>
+				<div class="faq__item">
+					<div class="faq__question">Где проходят занятия</div>
+					<div class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eos nesciunt accusamus illum sapiente impedit animi cumque debitis blanditiis perspiciatis a fugiat ipsam necessitatibus deleniti neque voluptates dolor sed quibusdam, veritatis temporibus odio cum eligendi. Illum beatae quidem eos rerum.</div>
+				</div>
+			</div>
+			<div class="faq__btn-wrap">
+				<a href="#" class="btn btn--faq"><span>Посмотреть все ответы</span></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="place">
+		<div class="container">
+			<div class="block-title">Мы находимся</div>
+			<div class="place__blocks row">
+				<div class="place__photos col-lg-6 col-md-10" id="slider-place">
+					<a class="place__photo-wrap" href="images/front/place-img.jpg" data-fancybox="place">
+						<span class="place__photo-label">Санкт-Петербург<br> м. Площадь Восстания ул. Восстания 8</span>
+						<img class="place__photo" src="images/front/place-img.jpg" alt="">
+					</a>
+					<a class="place__photo-wrap" href="images/front/map-img.jpg" data-fancybox="place">
+						<span class="place__photo-label">Калининград<br> ул. Чернышевского</span>
+						<img class="place__photo" src="images/front/map-img.jpg" alt="">
+					</a>
+					<a class="place__photo-wrap" href="images/front/hero-photo.jpg" data-fancybox="place">
+						<span class="place__photo-label">Калининград<br> ул. Фрунзе</span>
+						<img class="place__photo" src="images/front/hero-photo.jpg" alt="">
+					</a>
+					<a class="place__photo-wrap" href="images/front/hero-photo.jpg" data-fancybox="place">
+						<span class="place__photo-label">Санкт-Петербург<br> м. Площадь Восстания ул. Восстания 8</span>
+						<img class="place__photo" src="images/front/hero-photo.jpg" alt="">
+					</a>
+				</div>
+				<div class="place__map-wrap col-lg-6 col-md-10">
+					<div id="place__map" class="place__map"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<footer class="page-footer">
+	<div class="container">
+		<a href="#header" class="js-scroll-to go-top-arrow"></a>
+		<div class="row page-footer__top">
+			<div class="page-footer__logo-wrap col-lg-2 col-md-7 col-sm-6">
+				<a href="#" class="page-footer__logo">
+					<img src="images/logo-footer.jpg" alt="">
+				</a>
+				<div class="page-footer__descr">
+					<span class="page-footer__company">Стремление</span>
+					<span>Школа художественной и эстетической гимнастики</span>
+				</div>
+			</div>
+
+			<div class="page-footer__nav col-lg-6">
+				<nav class="footer-nav">
+					<ul class="footer-nav__list">
+						<li class="footer-nav__item"><a href="#" class="">Программы обучения</a></li>
+						<li class="footer-nav__item"><a href="#" class="">О нас</a></li>
+						<li class="footer-nav__item"><a href="#" class="">Расписание</a></li>
+						<li class="footer-nav__item"><a href="#" class="">Вопрос-ответ</a></li>
+						<li class="footer-nav__item"><a href="#" class="">Галерея</a></li>
+						<li class="footer-nav__item"><a href="#" class="">Арендодателям</a></li>
+						<li class="footer-nav__item"><a href="#" class="">Новости</a></li>
+						<li class="footer-nav__item"><a href="#" class="">Акции</a></li>
+						<li class="footer-nav__item"><a href="#" class="">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="page-footer__contacts col-lg-3  col-md-5 col-sm-6">
+				<div class="page-footer__soc">
+					<span class="page-footer__soc-text">Мы в социальных сетях</span>
+					<div class="page-footer__soc-list">
+						<a href="#" class="page-footer__soc-link">
+							<i class="fab fa-vk"></i>
+						</a>
+						<a href="#" class="page-footer__soc-link">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="#" class="page-footer__soc-link">
+							<i class="fab fa-youtube"></i>
+						</a>
+						<a href="#" class="page-footer__soc-link">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="#" class="page-footer__soc-link">
+							<i class="fab fa-odnoklassniki"></i>
+						</a>
+					</div>
+				</div>
+
+				<a href="tel:+7 4012-12-13-14" class="page-footer__tel">+7 4012-12-13-14</a>
+				<span class="page-footer__addr">Санкт-Петербург, м. Площадь Восстания, ул. Восстания 8</span>
+			</div>
+		</div>
+
+		<div class="row page-footer__bot">
+			<div class="page-footer__copy col-xl-6 col-lg-8 col-md-6">
+				© 2018 Стремление<br>
+				Все материалы данного сайта являются объектами авторского права (в том числе дизайн). Запрещается копирование, распространение (в том числе путем копирования на другие сайты и ресурсы в Интернете) или любое иное использование информации и объектов без предварительного согласия правообладателя.
+			</div>
+
+			<a href="#" class="page-footer__dev col-xl-3 col-lg-4 col-md-5">
+				<span class="page-footer__dev-logo">
+					<img src="images/logo-dev.png" alt="">
+				</span>
+
+				<span class="page-footer__dev-descr">
+					<span class="page-footer__dev-name">Сделано в веб-студии S&B Media</span>
+					<span class="page-footer__dev-info">Разработка и продвижение сайтов</span>
+				</span>
+			</a>
+		</div>
+	</div>
+</footer>
+<div style="display: none;" id="feedback" class="popup popup--feedback">
+	<form class="form row form--feedback">
+		<div class="form__title col-sm-12">Оставить отзыв</div>
+		<div class="form__subtitle col-sm-12">Вы можете оставить отзыв о нашей школе или тренере, ваше мнение важно для нас!</div>
+		<label class="field-text col-sm-12">
+			<input type="text" class="field-text__input" placeholder="Ваше имя">
+		</label>
+		<label class="field-text col-sm-12">
+			<input type="text" class="field-text__input" placeholder="Возраст/Группа ребенка">
+		</label>
+		<label class="field-text col-sm-12">
+			<input type="text" class="field-text__input" placeholder="Страница в соцсетях">
+		</label>
+		<label class="field-textarea col-sm-12">
+			<textarea class="field-textarea__input" placeholder="Отзыв"></textarea>
+		</label>
+
+		<label class="field-file col-sm-12">
+			<input class="field-file__input" type="file" multiple>
+		</label>
+		<div class="files__list col w-100"></div>
+
+		<label class="field-check col w-100">
+			<input type="checkbox" class="field-check__input">
+			<span class="field-check__label">Я ознакомлен с политикой конфиденциальности и согласен на обработку персональных данных</span>
+		</label>
+
+		<div class="form__submit-wrap col w-100">
+			<span class="btn btn--form">
+				<span>Отправить</span>
+			</span>
+		</div>
+	</form>
+</div>
+
+<div style="display: none;" id="free-trial" class="popup popup--free-trial">
+	<form class="form row form--free-trial">
+		<div class="form__title col-sm-12">Записаться на бесплатное занятие</div>
+		<div class="form__subtitle col-sm-12">Оставьте заявку и наш менеджер Вам перезвонит</div>
+		<label class="field-text col-sm-12">
+			<input type="text" class="field-text__input" placeholder="Ваше имя">
+		</label>
+		<label class="field-text col-sm-12">
+			<input type="text" class="field-text__input" placeholder="Номер телефона">
+		</label>
+		<label class="field-text col-sm-12">
+			<input type="text" class="field-text__input" placeholder="Email">
+		</label>
+		<label class="field-text col-sm-12">
+			<input type="text" class="field-text__input" placeholder="Срок предыдущего обучения">
+		</label>
+		<label class="field-text col-sm-12">
+			<input type="text" class="field-text__input" placeholder="Дата рождения ребенка">
+		</label>
+		<label class="field-textarea col-sm-12">
+			<textarea class="field-textarea__input" placeholder="Комментарий"></textarea>
+		</label>
+
+		<label class="field-check col w-100">
+			<input type="checkbox" class="field-check__input">
+			<span class="field-check__label">Я ознакомлен с политикой конфиденциальности и согласен на обработку персональных данных</span>
+		</label>
+
+		<div class="form__submit-wrap col w-100">
+			<span class="btn btn--form">
+				<span>Отправить</span>
+			</span>
+		</div>
+	</form>
+</div>
+
+<div style="display: none;" id="thanks" class="popup popup--thanks">
+	<div class="thanks">
+		<div class="thanks__title">Спасибо!</div>
+		<div class="thanks__subtitle">Ваша заявка принята</div>
+	</div>
+</div>
+<a href="#list" data-fancybox class="btn" style="position: fixed; bottom: 20px; right: 20px;"><span>Макеты</span></a>
+<div style="display: none;" id="list" class="popup">
+	<ul>
+		<li><a href="/">Главная</a></li>
+		<li><a href="content.html">Контентная</a></li>
+		<li><a href="news.html">Новости</a></li>
+		<li><a href="rent.html">Арендодателям</a></li>
+		<li><a href="programs.html">Программы</a></li>
+		<li><a href="program.html">Программа</a></li>
+		<li><a href="gallery.html">Галерея</a></li>
+		<li><a href="contacts.html">Контакты</a></li>
+		<li><a href="album.html">Альбом</a></li>
+		<li><a href="404.html">404</a></li>
+		<li><a data-fancywhite href="#feedback">Форма отзыва</a></li>
+		<li><a data-fancywhite href="#free-trial">Форма бесплатное занятие</a></li>
+		<li><a data-fancywhite href="#thanks">Спасибо</a></li>
+	</ul>
+</div>
+</body>
+</html>
