@@ -297,10 +297,29 @@ $(window).on('resize', function() {
     var select = $('.content-editor a[href$=".bmp"], .content-editor a[href$=".gif"], .content-editor a[href$=".jpg"], .content-editor a[href$=".jpeg"], .content-editor a[href$=".png"], .content-editor a[href$=".BMP"], .content-editor a[href$=".GIF"], .content-editor a[href$=".JPG"], .content-editor a[href$=".JPEG"], .content-editor a[href$=".PNG"]');
     select.fancybox();
 
-  document.querySelector('.field-file__input').onchange = function() {
-    if (this.files[0]) // если выбрали файл
-      $('.files__list').append('<span class="files__item">Прикрепленный файл: ' + this.files[0].name + '</span>');
-  };
+// Удаление input type file
+  de();
+  $('.field-file__input').on('change', function() {
+    if (this.files[0]) { // если выбрали файл
+      $(this).closest('.field-file').next('.files__list').find('.files__item').attr("style", "display:block").prepend('<span class="files__item-text">Прикрепленный файл: ' + this.files[0].name + '</span>');
+      $(this).attr("disabled", true).closest('.jq-file.field-file__input').addClass('field-file__input--disabled');
+    }
+  });
+
+  $(".files__item-btn").click(function() {
+    $(this).closest('.files__list').prev('.field-file').find(".field-file__input").val('').attr("disabled", false).closest('.jq-file.field-file__input').removeClass('field-file__input--disabled');
+    de();
+  })
+
+  function de() {
+    $('.files__item').attr("style", "display:none").find('.files__item-text').remove();
+  }
+
+
+  // $('.field-file__input').onchange = function() {
+  //   if (this.files[0]) // если выбрали файл
+  //     $('.files__list').append('<span class="files__item">Прикрепленный файл: ' + this.files[0].name + '</span>');
+  // };
 
   $('.field-file__input').styler({
     'fileBrowse': 'Выберите файл',
