@@ -40,6 +40,7 @@
   <link rel="stylesheet" href="css/fonts.css" media="all"/>
   <link rel="stylesheet" href="css/style.css" media="all"/>
   <link rel="stylesheet" href="css/jquery.fancybox.min.css" media="all"/>
+  <link rel="stylesheet" href="css/slick.css"/>
   <meta name="robots" content="noindex,nofollow">
 
   <script>var language = 'ru', mode = 5, disableStr = '', piEnableString = 'pi_opt_in319041', piVisitorString = 'visitor_id319041', disableFeedbackText = "Stand: Opt-Out-Cookie ist gesetzt";</script>  <!--Языковая панель-->
@@ -59,21 +60,15 @@
         <nav role="navigation" aria-labelledby="block-tece-main-menu-menu" id="block-tece-main-menu">
           <h2 class="visually-hidden" id="block-tece-main-menu-menu">Hauptnavigation</h2>  <!--Убрать?-->
           <ul>
-            <li><a href="/ru/dizain-i-tvorcestvo" data-drupal-link-system-path="node/2">Дизайн и творчество</a></li>
-            <li><a href="/ru/proekt-i-planirovanie" data-drupal-link-system-path="node/3">Проект и планирование</a></li>
-            <li><a href="/ru/ustanovka-i-montaz" data-drupal-link-system-path="node/4">Установка и монтаж</a></li>
+            <li><a href="" data-drupal-link-system-path="node/2">Продукция</a></li>
+            <li><a href="" data-drupal-link-system-path="node/3">Проекты/портфолио</a></li>
+            <li><a href="" data-drupal-link-system-path="node/4">Конфигуратор</a></li>
+            <li><a href="" data-drupal-link-system-path="node/4">Фабрики партнеры</a></li>
+            <li><a href="" data-drupal-link-system-path="node/4">О компании</a></li>
+            <li><a href="" data-drupal-link-system-path="node/4">Контакты</a></li>
+            <li><a href="" data-drupal-link-system-path="node/4">Отзывы</a></li>
           </ul>
         </nav>
-      </section>
-
-      <section class="secondary-menu visible-desktop float-left">
-      <nav role="navigation" aria-labelledby="block-topnavigationrechts-menu" id="block-topnavigationrechts">
-        <h2 class="visually-hidden" id="block-topnavigationrechts-menu">Top Navigation Rechts</h2>
-        <ul>
-          <li><a href="/ru/produkcia" data-drupal-link-system-path="node/5">Продукция</a></li>
-          <li><a href="/ru/servis" data-drupal-link-system-path="node/6">Сервис</a></li>
-        </ul>
-      </nav>
       </section>
 
       <section class="tertiary-menu visible-desktop float-right">
@@ -155,12 +150,12 @@
           </ul>
         </div>
 
-        <nav role="navigation" aria-labelledby="block-tece-account-menu-menu" id="block-tece-account-menu">
+<!--         <nav role="navigation" aria-labelledby="block-tece-account-menu-menu" id="block-tece-account-menu">
           <h2 class="visually-hidden" id="block-tece-account-menu-menu">Benutzermenü</h2>
           <ul class="meta">
             <li><a href="/ru/kontakt" data-drupal-link-system-path="node/11">Контакт</a></li>
           </ul>
-        </nav>
+        </nav> -->
       </section>
 
 
@@ -597,46 +592,65 @@
     </div>
   </main>
   <footer role="contentinfo" id="footer-main"  class="container footer-node-page">
-    <div class="row footer-links">
-      <nav role="navigation" aria-labelledby="block-menufooterlinks-menu" id="block-menufooterlinks">
-        <h2 id="block-menufooterlinks-menu">Компания</h2>
-        <ul>
-          <li><a href="/ru/kompania" data-drupal-link-system-path="node/8">Компания TECE</a></li>
-          <li><a href="/ru/%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F/vsemirnaa-sema" data-drupal-link-system-path="node/92">TECE International</a></li>
-          <li><a href="/ru/%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F/deatelnost" data-drupal-link-system-path="node/150">Деятельность</a></li>
-          <li><a href="/ru/proekty" data-drupal-link-system-path="node/80">Проекты</a></li>
-        </ul>
+    <div class="row footer__wrapper">
+      <div class="footer__contacts-wrapper">
+        <div class="footer__contacts-list">
+          <div class="footer__contacts-item footer__contacts-item--addr">г. Калининград, ул.&nbsp;Полтавская, д.&nbsp;3</div>
+          <a href="tel:" class="footer__contacts-item footer__contacts-item--tel">+7 (4012) 68-80-10</a>
+          <a href="mailto:" class="footer__contacts-item footer__contacts-item--mail">kaliningrad@tece.ru</a>
+        </div>
+      </div>
+      <nav role="navigation" aria-labelledby="block-footerunsortiert-menu" id="block-footerunsortiert" class="footer__center footer__nav">
+        <div class="footer__nav-item">
+          <div id="block-footerprodukte-menu" class="footer__menu-title">Продукция</div>
+          <ul>
+             <li><a href="/ru/santehniceskie-izdelia-i-sistemy" data-drupal-link-system-path="node/19">Сантехнические изделия и системы</a></li>
+            <li><a href="/ru/karkasnaa-sistema-dla-santehniki" data-drupal-link-system-path="node/20">Каркасная система для сантехники</a></li>
+            <li><a href="/ru/truboprovodnye-sistemy" data-drupal-link-system-path="node/22">Трубопроводные системы</a></li>
+            <li><a href="/ru/drenaz" title="Entwässerung" data-drupal-link-system-path="node/21">Дренаж</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-item">
+          <div id="block-footerunsortiert-menu" class="footer__menu-title">Дополнительные ссылки</div>
+          <ul>
+            <li><a href="/ru/newsblog" data-drupal-link-system-path="node/10">Newsblog</a></li>
+            <li><a href="/ru/servis" data-drupal-link-system-path="node/6">Сервис</a></li>
+            <li><a href="/ru/kontakt" data-drupal-link-system-path="node/11">Контакты</a></li>
+            <li><a href="/ru/konfigurator" data-drupal-link-system-path="node/149">Конфигуратор</a></li>
+            <li><a href="/ru/vyhodnye-dannye-zasita-dannyh" data-drupal-link-system-path="node/12">Выходные данные и Защита данных</a></li>
+          </ul>
+        </div>
       </nav>
-      <nav role="navigation" aria-labelledby="block-footerkompetenzen-menu" id="block-footerkompetenzen">
-        <h2 id="block-footerkompetenzen-menu">Деятельность</h2>
-        <ul>
-          <li><a href="/ru/dizain-i-tvorcestvo" data-drupal-link-system-path="node/2">Дизайн и творчество</a></li>
-          <li><a href="/ru/proekt-i-planirovanie" data-drupal-link-system-path="node/3">Проект и планирование</a></li>
-          <li><a href="/ru/ustanovka-i-montaz" data-drupal-link-system-path="node/4">Установка и монтаж</a></li>
-        </ul>
-      </nav>
-      <nav role="navigation" aria-labelledby="block-footerprodukte-menu" id="block-footerprodukte">
-        <h2 id="block-footerprodukte-menu">Продукция</h2>
-        <ul>
-           <li><a href="/ru/santehniceskie-izdelia-i-sistemy" data-drupal-link-system-path="node/19">Сантехнические изделия и системы</a></li>
-          <li><a href="/ru/karkasnaa-sistema-dla-santehniki" data-drupal-link-system-path="node/20">Каркасная система для сантехники</a></li>
-          <li><a href="/ru/truboprovodnye-sistemy" data-drupal-link-system-path="node/22">Трубопроводные системы</a></li>
-          <li><a href="/ru/drenaz" title="Entwässerung" data-drupal-link-system-path="node/21">Дренаж</a></li>
-        </ul>
-      </nav>
-      <nav role="navigation" aria-labelledby="block-footerunsortiert-menu" id="block-footerunsortiert">
-        <h2 id="block-footerunsortiert-menu">Дополнительные ссылки</h2>
-        <ul>
-          <li><a href="/ru/newsblog" data-drupal-link-system-path="node/10">Newsblog</a></li>
-          <li><a href="/ru/servis" data-drupal-link-system-path="node/6">Сервис</a></li>
-          <li><a href="/ru/kontakt" data-drupal-link-system-path="node/11">Контакты</a></li>
-          <li><a href="/ru/konfigurator" data-drupal-link-system-path="node/149">Конфигуратор</a></li>
-          <li><a href="/ru/vyhodnye-dannye-zasita-dannyh" data-drupal-link-system-path="node/12">Выходные данные и Защита данных</a></li>
-        </ul>
-      </nav>
+      <div class="footer__soc-logo-wrap">
+        <div class="footer__logo-wrap">
+          <a href="#" class="footer__logo">
+            <img src="images/svg/logo_tece_rgb--white.svg" alt="TECE">
+          </a>
+          <div class="footer__soc">
+            <span class="footer__soc-text">Мы в социальных сетях</span>
+            <div class="footer__soc-list">
+              <a href="#" class="footer__soc-link" target="_blank">
+                <i class="fab fa-vk"></i>
+              </a>
+              <a href="#" class="footer__soc-link" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="footer__soc-link" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="footer__soc-link" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="footer__soc-link" target="_blank">
+                <i class="fab fa-odnoklassniki"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="row">
-      <div class="copy">
+      <div class="footer__copy">
         &copy; <img src="images/svg/logo_tece_weiss_ohne-claim.svg">
         <span class="year">2018</span>
       </div>
@@ -646,7 +660,9 @@
 <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"ru\/","currentPath":"node\/1","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"ru"},"pluralDelimiter":"\u0003","user":{"uid":0,"permissionsHash":"baee54751bfb279bc411279df1e2c4bd82c6e8432f72ff1cd4deb6fb10b0e6ef"}}</script>
 <script src="js/user2.js"></script>
 <script src="js/user3.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIQSF7ULUgczkQqKkHOBgq5qYPkJuEnng&amp;callback=initMap" defer async data-test="map-link"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/user-new.js"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIQSF7ULUgczkQqKkHOBgq5qYPkJuEnng&amp;callback=initMap" defer async data-test="map-link"></script> -->
 <script src="js/jquery.fancybox.min.js"></script>
 
 <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"cb57eb95ed","applicationID":"77492342","transactionName":"blIEMEpVW0ZWAkFQVlcYJwdMXVpbGBFUXlxmVAcHUFE=","queueTime":0,"applicationTime":22,"atts":"QhUHRgJPSEg=","errorBeacon":"bam.nr-data.net","agent":""}</script>
@@ -654,11 +670,16 @@
 
 <div id="files" style="display: none;">
   <ul>
-    <li><a href="contacts.html">contacts</a></li>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+    <li><a href="produkcia-catalog.html">Продукция - каталог</a></li>
+    <li><a href="catalog-category.html">Категория каталога</a></li>
+    <li><a href="configurator.html">Конфигуратор</a></li>
+    <li><a href="factories-partners.html">Фабрики - партнеры</a></li>
+    <li><a href="content-page.html">Отзывы, контентная</a></li>
     <li><a href="deiatelnost.html">deiatelnost</a></li>
     <li><a href="design.html">design</a></li>
     <li><a href="downloads.html">downloads</a></li>
-    <li><a href="index.html">index</a></li>
     <li><a href="products.html">products</a></li>
     <li><a href="produkcia.html">produkcia</a></li>
     <li><a href="tece-company.html">tece-company</a></li>
@@ -666,15 +687,6 @@
     <li><a href="tece-proekty.html">tece-proekty</a></li>
     <li><a href="service.html">service</a></li>
   </ul>
-</div>
-
-<a data-fancybox data-src="#hidden-content" href="javascript:;">
-  Trigger the fancyBox
-</a>
-
-<div style="display: none;" id="hidden-content">
-  <h2>Hello</h2>
-  <p>You are awesome.</p>
 </div>
 </body>
 </html>
