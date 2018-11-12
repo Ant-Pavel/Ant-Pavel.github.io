@@ -14066,6 +14066,17 @@ html[lang="et"] .frontpage-teaser--two-thirds #p-news {
     padding-top: 50px;
   }
 }
+.content--portfolio {
+  padding-top: 50px;
+  max-width: 1440px;
+}
+@media (max-width: 1199px) {
+  .content--portfolio {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+  }
+}
 .alignleft {
   float: left;
   margin: 0 20px 20px 0;
@@ -14148,4 +14159,39 @@ html[lang="et"] .frontpage-teaser--two-thirds #p-news {
   .content-editor h4 {
     font-size: 1.5823rem;
   }
+}
+.pagination {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.pagination__item {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #2d447b;
+  font-size: 16px;
+  line-height: 20px;
+  color: #666666;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 700;
+}
+.pagination__item:hover {
+  background-color: #2d447b;
+}
+.pagination__item span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #00306e;
+}
+.pagination__item:hover span {
+  color: #fff;
 }
