@@ -3,7 +3,7 @@
 
 var BASE_URL = location.pathname;
 
-var env = new nunjucks.Environment(new nunjucks.WebLoader('../parts'));
+var env = new nunjucks.Environment(new nunjucks.WebLoader('/parts'));
 
 env.addFilter('split', function(str, seperator) {
     return str.split(seperator);
