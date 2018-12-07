@@ -1,0 +1,46 @@
+  <div class="days__list" id="documentsByDays">
+  {% for day, docs in data %}
+    <div class="day days__item">
+      <div class="day__header" data-docs-toggler>
+        <span class="day__date">
+          {% set date = day | split('_') | first %}
+          {% set datSum = day | split('_') | last %}
+          {{ date  }}
+        </span>
+        <span class="day__total">
+          Документов: {{docs | length}} ({{datSum}} &#8381;)
+        </span>
+      </div>
+      <div class="day__documents">
+      {% for doc, products in docs %}
+        <div class="day__documents-item document">
+          <div class="document__header" data-products-toggler>
+            {% set docNumber = doc | split('_') | first %}
+            {% set documentSum = doc | split('_') | last %}
+            <span class="document__number">Приход №{{docNumber}}</span>
+            <span class="document__sum">{{documentSum}} &#8381;</span>
+            <span class="document__products-amount">Товаров: {{ products | length }}</span>
+          </div>
+           <div class="document__products">
+           {% for product in products %}
+            <div class="documents__products-item product">
+              <div class="product__img-wrap">
+
+                <img src="{% if product.image %} {{product.image}} {% else %}images/no-image.jpg{% endif %}" alt="">
+              </div>
+              <div class="product__info">
+                <span class="product__name">{{product.name}}</span>
+                <div class="product__calc">
+                  <div class="product__calc-left">{{product.quantity}} штук  &#215; {{product.price}} &#8381;</div> 
+                  <div class="product__calc-right">{{ (product.quantity * product.price) | round(10)}} &#8381;</div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
