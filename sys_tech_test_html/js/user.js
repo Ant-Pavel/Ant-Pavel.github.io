@@ -38,7 +38,7 @@ env.addFilter('split', function(str, seperator) {
     }
 
     document.getElementById('wrapper').innerHTML = env.render(
-        '../parts/daysList.html', {
+        location.href + 'parts/daysList.html', {
           data: products,
         }
       );
@@ -83,5 +83,6 @@ env.addFilter('split', function(str, seperator) {
     var monthNames = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'];
     return date.getDate() + ' ' + monthNames[date.getMonth()];
   }
+
 
 })();
