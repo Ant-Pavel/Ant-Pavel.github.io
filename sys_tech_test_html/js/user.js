@@ -3,6 +3,14 @@
 
 var BASE_URL = location.pathname;
 
+nunjucks.configure('/parts');
+
+var env = new nunjucks.Environment();
+
+env.addFilter('split', function(str, seperator) {
+    return str.split(seperator);
+});
+
 function getData(method, url, callback) {
 
   let xhr = new XMLHttpRequest;
@@ -20,12 +28,6 @@ function getData(method, url, callback) {
   }
 }
 
-var env = new nunjucks.Environment();
-
-env.addFilter('split', function(str, seperator) {
-    return str.split(seperator);
-});
-
   getData("GET", 'products.json', function(products) {
     products.forEach(function(item) {
       item['date'] = item['date'].slice(0, item['date'].indexOf(' '));
@@ -38,7 +40,7 @@ env.addFilter('split', function(str, seperator) {
     }
 
     document.getElementById('wrapper').innerHTML = env.render(
-        "parts/daysList.html", {
+        "daysList.html", {
           data: products,
         }
       );
