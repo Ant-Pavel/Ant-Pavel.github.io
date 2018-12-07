@@ -38,7 +38,7 @@ env.addFilter('split', function(str, seperator) {
     }
 
     document.getElementById('wrapper').innerHTML = env.render(
-        "./parts/daysList.html", {
+        "parts/daysList.html", {
           data: products,
         }
       );
