@@ -20,7 +20,7 @@ function getData(method, url, callback) {
   }
 }
 
-var env = new nunjucks.Environment();
+var env = new nunjucks.Environment(new nunjucks.WebLoader(BASE_URL + 'parts'));
 
 env.addFilter('split', function(str, seperator) {
     return str.split(seperator);
@@ -38,7 +38,7 @@ env.addFilter('split', function(str, seperator) {
     }
 
     document.getElementById('wrapper').innerHTML = env.render(
-        location.href + 'parts/daysList.html', {
+        'daysList.html', {
           data: products,
         }
       );
@@ -83,6 +83,5 @@ env.addFilter('split', function(str, seperator) {
     var monthNames = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'];
     return date.getDate() + ' ' + monthNames[date.getMonth()];
   }
-
 
 })();
