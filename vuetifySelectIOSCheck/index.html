@@ -11,12 +11,27 @@
 <body>
     <div id="app">
         <div class="pa-4">
-            <v-autocomplete v-for="s in selects"
-            :key="s.id"
-            :label="s.name"
-            :items="s.items" 
-            variant="underlined" 
-            density="compact" />
+            <v-btn id="dialogActivator" color="info">Open</v-btn>
+            <v-dialog v-model="isOpened" activator="#dialogActivator" persistent="true">
+                <v-card title="Рейтинг городов" class="pa-4">
+                    <v-card-text>
+                        <v-autocomplete v-for="s in selects"
+                        :key="s.id"
+                        :label="s.name"
+                        :items="s.items" 
+                        variant="underlined" 
+                        density="compact" />
+                    </v-card-text>
+                    <v-card-actions>
+                        <v-spacer></v-spacer>
+                        <v-btn
+                            color="primary"
+                            text="Close"
+                            @click="isOpened = false"
+                        ></v-btn>
+                    </v-card-actions>
+                </v-card>
+            </v-dialog>
         </div>
     </div>
 </body>
@@ -213,8 +228,10 @@
             { id: 11, name: 'Select 11', items: items },
             { id: 12, name: 'Select 12', items: items }
         ];
+
+        const isOpened = ref(false);
       return {
-        selects
+        selects, isOpened
       }
     }
   });
